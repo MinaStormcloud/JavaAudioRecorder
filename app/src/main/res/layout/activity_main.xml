@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    android:orientation="vertical">    
+
+    <Button
+        android:id="@+id/btnRec"        
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="Record"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="STOP RECORDING"        
+        android:layout_toEndOf="@+id/btnRec"/>
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_below="@+id/btnRec"/>
+
+    <Button
+        android:id="@+id/btnEndPlay"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="STOP PLAYBACK "
+        android:layout_below="@+id/btnStop"
+        android:layout_toRightOf="@+id/btnPlay" />
+</RelativeLayout>
